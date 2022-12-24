@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+p {
+    font-size: 14px;
+}
+
+.container {
+    width: 600px;
+    margin: 180px auto;
+    display: flex;
+}
+
+.product_image {
+    width: 50%;
+}
+
+.desktop_design_img{
+    width: 100%;
+    height: 100%;
+}
+
+.desktop_design_img>img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mobile_design_img {
+    display: none;
+}
+
+.product_details {
+    width: 50%;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.first_paragraph {
+    letter-spacing: 5px;
+    padding: 30px;
+    padding-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.product_details>h2 {
+    padding: 20px 30px;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    width: 200px;
+    line-height: 32px;
+}
+
+.second_paragraph {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 30px 20px 30px;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 23px;
+    font-family: 'Fraunces', serif;
+}
+
+.price>h2 {
+    color: hsl(158, 36%, 37%);
+    padding-left: 30px;
+}
+
+.cut_price  {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 50px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    margin: 20px 35px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.cart:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.cart>img {
+    width: 20px;
+}
+
+.cart>p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:616px) {
+    .container{
+        display: block;
+        width: 375px;
+        margin: 35px auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .product_image{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .desktop_design_img {
+        display: none;
+    }
+    .mobile_design_img {
+        display: block;
+        width: 100%;
+    }
+    .mobile_design_img>img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .product_details {
+        display: block;
+        padding-bottom: 15px;
+        width: 100%;
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .product_details>h2 {
+        margin-right: 0;
+        white-space: pre;
+        padding-top: 10px;
+    }
+    .product_details>p {
+        padding-right: 0;
+        white-space: pre;
+    }
+}
